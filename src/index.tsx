@@ -1,16 +1,14 @@
 import React, { Suspense, useState } from "react";
 import ReactDOM, { createPortal } from "react-dom";
-// import Test from "./Test";
-const Test = React.lazy(() => import("./Test"));
+import Test from "@components/Test";
+const LazyFallbackTest = React.lazy(() => import("./LazyFallbackTest"));
 
 function App() {
-  const [data, setData] = useState(null);
-
-
   return (
     <div className='App'>
       <Suspense fallback={Loading()}>
-        <Test text={'asdasd'}/>
+        <Test text="Hello..." />
+        <LazyFallbackTest />
       </Suspense>
     </div>
   );

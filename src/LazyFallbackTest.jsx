@@ -5,7 +5,7 @@ let result;
 
 const data = fetchSomthing();
 
-const Test = () => {
+const LazyFallbackTest = () => {
   // No need for loading states
   const result = data();
   return (
@@ -40,4 +40,4 @@ function fetchSomthing() {
   };
 }
 
-export default Test;
+export default LazyFallbackTest;
