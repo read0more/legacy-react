@@ -9,6 +9,7 @@
     "@types/node": "^20.4.7",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
+    "jspdf": "^2.5.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-scripts": "3.4.4",
